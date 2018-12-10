@@ -15,6 +15,10 @@
 		2212EB3E21BE09A00081D186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2212EB3C21BE09A00081D186 /* LaunchScreen.storyboard */; };
 		2212EB4921BE09A20081D186 /* SCBoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212EB4821BE09A20081D186 /* SCBoyTests.swift */; };
 		2212EB5421BE09A20081D186 /* SCBoyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212EB5321BE09A20081D186 /* SCBoyUITests.swift */; };
+		2212EB6621BE10B70081D186 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2212EB6521BE10B70081D186 /* ToastSwiftFramework.framework */; };
+		2212EB6821BE120D0081D186 /* ToastSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2212EB6521BE10B70081D186 /* ToastSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2212EB6C21BE124F0081D186 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2212EB6321BE0DAA0081D186 /* Eureka.framework */; };
+		2212EB6D21BE124F0081D186 /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2212EB6321BE0DAA0081D186 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2212EB6921BE120D0081D186 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2212EB6821BE120D0081D186 /* ToastSwiftFramework.framework in Embed Frameworks */,
+				2212EB6D21BE124F0081D186 /* Eureka.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2212EB2E21BE09980081D186 /* SCBoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCBoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2212EB3121BE09980081D186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,8 @@
 		2212EB4F21BE09A20081D186 /* SCBoyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCBoyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2212EB5321BE09A20081D186 /* SCBoyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBoyUITests.swift; sourceTree = "<group>"; };
 		2212EB5521BE09A20081D186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2212EB6321BE0DAA0081D186 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = SOURCE_ROOT; };
+		2212EB6521BE10B70081D186 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2212EB6621BE10B70081D186 /* ToastSwiftFramework.framework in Frameworks */,
+				2212EB6C21BE124F0081D186 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +122,7 @@
 		2212EB3021BE09980081D186 /* SCBoy */ = {
 			isa = PBXGroup;
 			children = (
+				2212EB6221BE0C910081D186 /* Framework */,
 				2212EB3121BE09980081D186 /* AppDelegate.swift */,
 				2212EB3321BE09980081D186 /* FirstViewController.swift */,
 				2212EB3521BE09980081D186 /* SecondViewController.swift */,
@@ -128,6 +152,15 @@
 			path = SCBoyUITests;
 			sourceTree = "<group>";
 		};
+		2212EB6221BE0C910081D186 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2212EB6521BE10B70081D186 /* ToastSwiftFramework.framework */,
+				2212EB6321BE0DAA0081D186 /* Eureka.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +171,8 @@
 				2212EB2A21BE09980081D186 /* Sources */,
 				2212EB2B21BE09980081D186 /* Frameworks */,
 				2212EB2C21BE09980081D186 /* Resources */,
+				2212EB6921BE120D0081D186 /* Embed Frameworks */,
+				2212EB6121BE0C190081D186 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +288,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2212EB6121BE0C190081D186 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Eureka.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ToastSwiftFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2212EB2A21BE09980081D186 /* Sources */ = {
@@ -437,15 +496,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUBNRGKH85;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SCBoy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ascp.SCBoy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ascp.SCBoy2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,15 +518,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUBNRGKH85;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SCBoy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ascp.SCBoy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ascp.SCBoy2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
