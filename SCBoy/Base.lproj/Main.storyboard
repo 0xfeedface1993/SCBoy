@@ -21,7 +21,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="比赛" image="first" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" title="比赛" id="unv-Hv-VEu"/>
+                    <navigationItem key="navigationItem" title="今日赛事" id="unv-Hv-VEu"/>
                     <connections>
                         <outlet property="view" destination="tsR-hK-woN" id="S9U-fU-IGs"/>
                     </connections>
