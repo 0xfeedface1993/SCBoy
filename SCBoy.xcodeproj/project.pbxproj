@@ -532,6 +532,10 @@
 		244989F6226DAFF500A31268 /* ESPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244989F3226DAEB700A31268 /* ESPullToRefresh.framework */; };
 		244989F7226DAFF500A31268 /* ESPullToRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 244989F3226DAEB700A31268 /* ESPullToRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		244989F9226DB99D00A31268 /* Contries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244989F8226DB99D00A31268 /* Contries.swift */; };
+		24F29F3C22703A6D0037A281 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F29F3B22703A6D0037A281 /* NotificationCenter.framework */; };
+		24F29F3F22703A6D0037A281 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F29F3E22703A6D0037A281 /* TodayViewController.swift */; };
+		24F29F4222703A6D0037A281 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F29F4022703A6D0037A281 /* MainInterface.storyboard */; };
+		24F29F4622703A6D0037A281 /* SCToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 24F29F3922703A6D0037A281 /* SCToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -549,6 +553,13 @@
 			remoteGlobalIDString = 2212EB2D21BE09980081D186;
 			remoteInfo = SCBoy;
 		};
+		24F29F4422703A6D0037A281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2212EB2621BE09980081D186 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F29F3822703A6D0037A281;
+			remoteInfo = SCToday;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -564,6 +575,17 @@
 				244989F1226DA9FB00A31268 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F29F4A22703A6D0037A281 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				24F29F4622703A6D0037A281 /* SCToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1095,6 +1117,11 @@
 		244989EE226DA9F300A31268 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		244989F3226DAEB700A31268 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESPullToRefresh.framework; path = Carthage/Build/iOS/ESPullToRefresh.framework; sourceTree = SOURCE_ROOT; };
 		244989F8226DB99D00A31268 /* Contries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contries.swift; sourceTree = "<group>"; };
+		24F29F3922703A6D0037A281 /* SCToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F29F3B22703A6D0037A281 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		24F29F3E22703A6D0037A281 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		24F29F4122703A6D0037A281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		24F29F4322703A6D0037A281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1123,6 +1150,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24F29F3622703A6D0037A281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F29F3C22703A6D0037A281 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1133,6 +1168,8 @@
 				2212EB3021BE09980081D186 /* SCBoy */,
 				2212EB4721BE09A20081D186 /* SCBoyTests */,
 				2212EB5221BE09A20081D186 /* SCBoyUITests */,
+				24F29F3D22703A6D0037A281 /* SCToday */,
+				24F29F3A22703A6D0037A281 /* Frameworks */,
 				2212EB2F21BE09980081D186 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1143,6 +1180,7 @@
 				2212EB2E21BE09980081D186 /* SCBoy.app */,
 				2212EB4421BE09A20081D186 /* SCBoyTests.xctest */,
 				2212EB4F21BE09A20081D186 /* SCBoyUITests.xctest */,
+				24F29F3922703A6D0037A281 /* SCToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1730,6 +1768,24 @@
 			name = Tool;
 			sourceTree = "<group>";
 		};
+		24F29F3A22703A6D0037A281 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F29F3B22703A6D0037A281 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24F29F3D22703A6D0037A281 /* SCToday */ = {
+			isa = PBXGroup;
+			children = (
+				24F29F3E22703A6D0037A281 /* TodayViewController.swift */,
+				24F29F4022703A6D0037A281 /* MainInterface.storyboard */,
+				24F29F4322703A6D0037A281 /* Info.plist */,
+			);
+			path = SCToday;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1742,10 +1798,12 @@
 				2212EB2C21BE09980081D186 /* Resources */,
 				2212EB6921BE120D0081D186 /* Embed Frameworks */,
 				2212EB6121BE0C190081D186 /* ShellScript */,
+				24F29F4A22703A6D0037A281 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				24F29F4522703A6D0037A281 /* PBXTargetDependency */,
 			);
 			name = SCBoy;
 			productName = SCBoy;
@@ -1788,13 +1846,30 @@
 			productReference = 2212EB4F21BE09A20081D186 /* SCBoyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		24F29F3822703A6D0037A281 /* SCToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F29F4922703A6D0037A281 /* Build configuration list for PBXNativeTarget "SCToday" */;
+			buildPhases = (
+				24F29F3522703A6D0037A281 /* Sources */,
+				24F29F3622703A6D0037A281 /* Frameworks */,
+				24F29F3722703A6D0037A281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCToday;
+			productName = SCToday;
+			productReference = 24F29F3922703A6D0037A281 /* SCToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2212EB2621BE09980081D186 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = ascp;
 				TargetAttributes = {
@@ -1811,6 +1886,9 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
 						TestTargetID = 2212EB2D21BE09980081D186;
+					};
+					24F29F3822703A6D0037A281 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -1830,6 +1908,7 @@
 				2212EB2D21BE09980081D186 /* SCBoy */,
 				2212EB4321BE09A20081D186 /* SCBoyTests */,
 				2212EB4E21BE09A20081D186 /* SCBoyUITests */,
+				24F29F3822703A6D0037A281 /* SCToday */,
 			);
 		};
 /* End PBXProject section */
@@ -2362,6 +2441,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24F29F3722703A6D0037A281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F29F4222703A6D0037A281 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2425,6 +2512,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24F29F3522703A6D0037A281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F29F3F22703A6D0037A281 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2437,6 +2532,11 @@
 			isa = PBXTargetDependency;
 			target = 2212EB2D21BE09980081D186 /* SCBoy */;
 			targetProxy = 2212EB5021BE09A20081D186 /* PBXContainerItemProxy */;
+		};
+		24F29F4522703A6D0037A281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F29F3822703A6D0037A281 /* SCToday */;
+			targetProxy = 24F29F4422703A6D0037A281 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2455,6 +2555,14 @@
 				2212EB3D21BE09A00081D186 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		24F29F4022703A6D0037A281 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F29F4122703A6D0037A281 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2579,6 +2687,7 @@
 		2212EB5921BE09A20081D186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6NP67H473;
@@ -2601,6 +2710,7 @@
 		2212EB5A21BE09A20081D186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6NP67H473;
@@ -2710,6 +2820,46 @@
 			};
 			name = Release;
 		};
+		24F29F4722703A6D0037A281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6NP67H473;
+				INFOPLIST_FILE = SCToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ascp.SCBoy2.SCToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24F29F4822703A6D0037A281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E6NP67H473;
+				INFOPLIST_FILE = SCToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ascp.SCBoy2.SCToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2745,6 +2895,15 @@
 			buildConfigurations = (
 				2212EB5F21BE09A20081D186 /* Debug */,
 				2212EB6021BE09A20081D186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F29F4922703A6D0037A281 /* Build configuration list for PBXNativeTarget "SCToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F29F4722703A6D0037A281 /* Debug */,
+				24F29F4822703A6D0037A281 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
